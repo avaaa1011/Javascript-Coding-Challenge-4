@@ -35,54 +35,56 @@ do
 console.log("Survey Completed");
 
 //Task 5 : Employee Information
-let employee = 
+let employee = //declaring an objext with multiple properties
     {
         name: "Alice",
         position: "Manager",
         salary: 75000
     };
-for (let key in employee)
+for (let key in employee) //for loop to iterarte the object's properties
     {
         console.log(`${key}: ${employee[key]}`);
     }
 
 //Task 6 : Product Listings
-let products = ["Laptop", "Mouse", "Keyboard"];
-for(let product of products)
+let products = ["Laptop", "Mouse", "Keyboard"]; //declaring an array with 3 product names
+for(let product of products) //for loop so each product will be displayed 
     {
         console.log(`Product: ${product}`);
     };
 
 //Task 7 : Order Processing 
-let orders = [101, 102, 103];
-orders.forEach(order => {console.log(`Order ID: ${order}`)}); 
+let orders = [101, 102, 103]; //declaring an array with 3 orders IDs
+orders.forEach(order => {console.log(`Order ID: ${order}`)}); //using a method to log each ID
 
-//Task 8 : Tax Calculation
-function calculateTax (amount, taxRate)
+//Task 8 : Tax Calculation 
+function calculateTax (amount, taxRate) //using a function that will take both the tax amount and tax rate
     {
-        return amount * taxRate;
+        return amount * taxRate; //returning the calculated amount of tax
     }
     let taxRate = calculateTax(110, 0.3);
     console.log(`Calculated Tax: $${tax}`);
 
 //Task 9 : Discount Application
-const price = 1500; 
-const discountPercentage = 0.4;
-const applyDiscount = function (price, discountPercentage)
+const price = 1500; //random price value
+const discountPercentage = 0.4; //random discount value
+const applyDiscount = function (price, discountPercentage) //declaring a function that will take the price and discount percentage
     {   
         const discountAmount = price * (discountPercentage);
         const discountedPrice = price - discountAmount
-        return discountedPrice;
+        return discountedPrice; //returning the calculated discounted price
     };
     const finalPrice = applyDiscount(price, discountPercentage);
     console.log(`Price after ${discountPercentage}% discount:  $${finalPrice.toFixed(2)}`);
 
 //Task 10 : Loyalty Points
 let calculatePoints = (purchaseAmount) => 
+//used an arrow function that will take both purchase amount and return points
     {
-        return Math.floor(purchaseAmount / 10);
+        return Math.floor(purchaseAmount / 10); //dividing by 10 because 1 point is earned per $10 spent
     };
-    let purchaseAmount2 = 300;
+    let purchaseAmount2 = 300; //random number chosen
     let points = calculatePoints(purchaseAmount2);
     console.log(`Points earned: ${points}`);
+
     
