@@ -76,4 +76,13 @@ const applyDiscount = function (price, discountPercentage)
     };
     const finalPrice = applyDiscount(price, discountPercentage);
     console.log(`Price after ${discountPercentage}% discount:  $${finalPrice.toFixed(2)}`);
+
+//Task 10 : Loyalty Points
+let calculatePoints = (purchaseAmount) => 
+    {
+        return Math.floor(purchaseAmount / 10);
+    };
+    let purchaseAmount2 = 300;
+    let points = calculatePoints(purchaseAmount2);
+    console.log(`Points earned: ${points}`);
     
