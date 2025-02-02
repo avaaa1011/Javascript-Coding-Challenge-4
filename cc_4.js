@@ -25,6 +25,14 @@ while (stock > 0)
         stock --; //this will decrease the stock by one in each loop
     };
 
-    
+//Task 4 : Customer Survey
+let responses = 0; //declaring a variable with the value of 0
+do 
+    {
+       responses++;
+       console.log(`Responses: ${responses}`); 
+    } while (responses < 3); //will log the responses up until 3
+console.log("Survey Completed");
+
 
 
