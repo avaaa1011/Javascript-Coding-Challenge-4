@@ -34,5 +34,15 @@ do
     } while (responses < 3); //will log the responses up until 3
 console.log("Survey Completed");
 
-
-
+//Task 5 : Employee Information
+let employee = 
+    {
+        name: "Alice",
+        position: "Manager",
+        salary: 75000
+    };
+for (let key in employee)
+    {
+        console.log(`${key}: ${employee[key]}`);
+    }
+    
