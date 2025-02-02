@@ -63,7 +63,7 @@ function calculateTax (amount, taxRate) //using a function that will take both t
         return amount * taxRate; //returning the calculated amount of tax
     }
     let taxRate = calculateTax(110, 0.3);
-    console.log(`Calculated Tax: $${tax}`);
+    console.log(`Calculated Tax: $${taxRate}`);
 
 //Task 9 : Discount Application
 const price = 1500; //random price value
@@ -87,4 +87,3 @@ let calculatePoints = (purchaseAmount) =>
     let points = calculatePoints(purchaseAmount2);
     console.log(`Points earned: ${points}`);
 
-    
