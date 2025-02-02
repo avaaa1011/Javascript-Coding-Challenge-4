@@ -17,7 +17,14 @@ for(let i = 0; i < sales.length; i++) //using a for loop to calculate the total 
     }
     console.log(`Total Sales: $${totalSales}`); 
 
+//Task 3 : Inventory Depletion 
+let stock = 10; //declaring a variable with value of 10
+while (stock > 0)
+    {
+        console.log(`Stock Remaining: ${stock}`);
+        stock --; //this will decrease the stock by one in each loop
+    };
 
-
+    
 
 
